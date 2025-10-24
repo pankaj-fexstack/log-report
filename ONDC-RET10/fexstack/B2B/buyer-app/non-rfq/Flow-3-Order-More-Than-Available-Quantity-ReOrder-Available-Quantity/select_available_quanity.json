@@ -1,0 +1,107 @@
+{
+    "context": {
+        "domain": "ONDC:RET10",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "select",
+        "version": "2.0.2",
+        "bap_id": "preprod.fexstack.com",
+        "bap_uri": "https://preprod.fexstack.com/",
+        "transaction_id": "3f8d0329-d215-4f19-8cfa-ffce93f95f68",
+        "message_id": "c5f18a1f-92ea-4c2c-98ef-06cbee83793c",
+        "timestamp": "2025-10-23T12:50:20.741Z",
+        "ttl": "PT30S",
+        "bpp_id": "ondcpreprodb2b.rapidor.co",
+        "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "dairy003",
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "fulfillment_ids": [
+                        "1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "add_ons": [],
+                    "tags": []
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Delivery",
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "26.9154576,75.8189817",
+                                "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
+                                "area_code": "302001",
+                                "city": {
+                                    "name": "Bengaluru"
+                                },
+                                "country": {
+                                    "code": "IND"
+                                },
+                                "state": {
+                                    "name": "Karnataka"
+                                }
+                            },
+                            "contact": {
+                                "phone": "8892307028"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "payments": [
+                {
+                    "type": "ON-FULFILLMENT"
+                }
+            ],
+            "tags": [
+                {
+                    "descriptor": {
+                        "code": "buyer_id"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "buyer_id_code"
+                            },
+                            "value": "gst"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "buyer_id_no"
+                            },
+                            "value": "29AFJFS4237D1ZU"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
