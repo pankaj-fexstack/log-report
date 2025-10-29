@@ -13,14 +13,14 @@
         "version": "2.0.2",
         "bap_id": "preprod.fexstack.com",
         "bap_uri": "https://preprod.fexstack.com/",
-        "transaction_id": "123d9592-5fa7-4d0d-a856-8902dc0f4efc",
-        "message_id": "e3d21b1f-7e39-49b9-85a2-66387785d030",
-        "timestamp": "2025-10-23T10:54:30.423Z",
+        "transaction_id": "b0cf8a0d-6ea7-4e20-a4e9-15b68a7398e3",
+        "message_id": "0ec3fa6d-c65d-4e8a-873e-4c0559a30992",
+        "timestamp": "2025-10-29T04:38:41.510Z",
         "ttl": "PT30S",
         "bpp_id": "ondcpreprodb2b.rapidor.co",
         "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller"
     },
     "message": {
-        "order_id": "789025"
+        "order_id": "167188"
     }
 }

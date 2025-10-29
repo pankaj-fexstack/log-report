@@ -13,9 +13,9 @@
         "version": "2.0.2",
         "bap_id": "preprod.fexstack.com",
         "bap_uri": "https://preprod.fexstack.com/",
-        "transaction_id": "3f8d0329-d215-4f19-8cfa-ffce93f95f68",
-        "message_id": "0860f3de-aa4a-4ba8-915d-0fa38f29c75f",
-        "timestamp": "2025-10-23T12:46:13.422Z",
+        "transaction_id": "21916866-91e5-46d2-93fb-c7b228b08e92",
+        "message_id": "9becb6bd-7169-4f00-819d-e21ed13c8aa6",
+        "timestamp": "2025-10-29T04:49:56.126Z",
         "ttl": "PT30S",
         "bpp_id": "ondcpreprodb2b.rapidor.co",
         "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller"
@@ -39,13 +39,12 @@
                     "fulfillment_ids": [
                         "1"
                     ],
+                    "add_ons": [],
                     "quantity": {
                         "selected": {
                             "count": 11
                         }
-                    },
-                    "add_ons": [],
-                    "tags": []
+                    }
                 }
             ],
             "fulfillments": [

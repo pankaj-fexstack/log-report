@@ -7,9 +7,9 @@
     },
     "action": "on_status",
     "version": "2.0.2",
-    "transaction_id": "123d9592-5fa7-4d0d-a856-8902dc0f4efc",
-    "message_id": "f4b8a7b0-6eb1-4c4f-a696-6105d33bb913",
-    "timestamp": "2025-10-23T11:00:12.000Z",
+    "transaction_id": "b0cf8a0d-6ea7-4e20-a4e9-15b68a7398e3",
+    "message_id": "ba1dfbf1-e4e8-4a10-82cd-83395b11e4db",
+    "timestamp": "2025-10-29T04:45:26.000Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -18,7 +18,7 @@
   },
   "message": {
     "order": {
-      "id": "789025",
+      "id": "167188",
       "state": "In-progress",
       "provider": {
         "id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
@@ -59,10 +59,10 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-10-23T10:47:03.000Z",
-                  "end": "2025-10-23T12:47:03.000Z"
+                  "start": "2025-10-29T04:29:33.000Z",
+                  "end": "2025-10-29T06:29:33.000Z"
                 },
-                "timestamp": "2025-10-23T10:58:28.000Z"
+                "timestamp": "2025-10-29T04:43:48.000Z"
               },
               "contact": {
                 "phone": "9605904686",
@@ -73,7 +73,7 @@
                 "short_desc": "picked up",
                 "long_desc": "picked up",
                 "images": [
-                  "https://rapidor.s3-us-west-2.amazonaws.com/files/_dqclzCGvoo0kIY1WNsWo_screenshot-2025-10-09-085231-png.png"
+                  "https://rapidor.s3-us-west-2.amazonaws.com/files/E73S2tb1IWczr9LqhWLRe_screenshot-2025-10-09-085231.png"
                 ]
               }
             },
@@ -89,8 +89,8 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-10-25T10:47:03.000Z",
-                  "end": "2025-10-25T12:47:03.000Z"
+                  "start": "2025-10-31T04:29:33.000Z",
+                  "end": "2025-10-31T06:29:33.000Z"
                 }
               },
               "contact": { "phone": "8892307028" }
@@ -171,12 +171,12 @@
       },
       "documents": [
         {
-          "url": "https://ondcpreprodb2b.rapidor.co/static/pdf/789025.pdf?v=1761217109",
+          "url": "https://rapidor.s3-us-west-2.amazonaws.com/invoices/IND/KA/167188-20567c15-13fa-4d98-be49-9e8dfdae039c.pdf",
           "label": "Invoice"
         }
       ],
-      "created_at": "2025-10-23T10:47:02.071Z",
-      "updated_at": "2025-10-23T11:00:12.000Z"
+      "created_at": "2025-10-29T04:29:31.946Z",
+      "updated_at": "2025-10-29T04:45:26.000Z"
     }
   }
 }

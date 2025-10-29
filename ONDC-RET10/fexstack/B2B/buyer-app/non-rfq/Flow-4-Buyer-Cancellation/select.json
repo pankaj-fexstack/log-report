@@ -13,9 +13,9 @@
         "version": "2.0.2",
         "bap_id": "preprod.fexstack.com",
         "bap_uri": "https://preprod.fexstack.com/",
-        "transaction_id": "86312734-688e-49b3-aa76-713d026d67c1",
-        "message_id": "9a74b919-1b9d-40da-9119-a95c5db3ea76",
-        "timestamp": "2025-10-23T13:19:05.439Z",
+        "transaction_id": "9449e022-c3b7-4c98-a582-c3a6e5f1c477",
+        "message_id": "08e794f7-f42f-40e2-94ae-9cc4893b317f",
+        "timestamp": "2025-10-29T06:13:01.423Z",
         "ttl": "PT30S",
         "bpp_id": "ondcpreprodb2b.rapidor.co",
         "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller"
@@ -39,13 +39,12 @@
                     "fulfillment_ids": [
                         "1"
                     ],
+                    "add_ons": [],
                     "quantity": {
                         "selected": {
                             "count": 1
                         }
-                    },
-                    "add_ons": [],
-                    "tags": []
+                    }
                 }
             ],
             "fulfillments": [
@@ -57,10 +56,10 @@
                             "type": "end",
                             "location": {
                                 "gps": "26.9154576,75.8189817",
-                                "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
+                                "address": "Home: Kirti Singhvi, 13th Main,, Apartment Bangalore, Karnataka, 560001, India. Contact Number: 9886450059",
                                 "area_code": "302001",
                                 "city": {
-                                    "name": "Bengaluru"
+                                    "name": "Bangalore"
                                 },
                                 "country": {
                                     "code": "IND"
@@ -70,7 +69,7 @@
                                 }
                             },
                             "contact": {
-                                "phone": "8892307028"
+                                "phone": "9886450059"
                             }
                         }
                     ]

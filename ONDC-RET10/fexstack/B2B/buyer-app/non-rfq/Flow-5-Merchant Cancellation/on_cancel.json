@@ -7,9 +7,9 @@
     },
     "action": "on_cancel",
     "version": "2.0.2",
-    "transaction_id": "5710e067-9659-4c1d-bf45-859ac1a4902f",
-    "message_id": "aGnwsJSNUlWNoLyEOjQAF",
-    "timestamp": "2025-10-23T13:57:05.927Z",
+    "transaction_id": "a33afbde-292c-4457-a57f-809b27f2a903",
+    "message_id": "GOuGoVtWiIuh_lXRPm544",
+    "timestamp": "2025-10-29T07:05:59.121Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -18,7 +18,7 @@
   },
   "message": {
     "order": {
-      "id": 534695,
+      "id": "607114",
       "cancellation": {
         "cancelled_by": "ondcpreprodb2b.rapidor.co",
         "reason": { "id": "005" }
@@ -39,11 +39,11 @@
       ],
       "billing": {
         "name": "Pankaj Sharma",
-        "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
+        "address": "Home: Kirti Singhvi, 13th Main,, Apartment Bangalore, Karnataka, 560001, India. Contact Number: 9886450059",
         "email": "pankajsharma@fexstack.com",
-        "phone": "8892307028",
+        "phone": "9886450059",
         "tax_id": "29AFJFS4237D1ZU",
-        "city": { "name": "Bengaluru" },
+        "city": { "name": "Bangalore" },
         "state": { "name": "Karnataka" }
       },
       "fulfillments": [
@@ -57,28 +57,50 @@
           "stops": [
             {
               "type": "start",
-              "location": { "id": "L1", "descriptor": { "name": "ONDC Test Seller" }, "gps": "10.075437,76.438243" },
-              "time": { "range": { "start": "2025-10-23T13:44:31.000Z", "end": "2025-10-23T15:44:31.000Z" } },
-              "contact": { "phone": "9605904686", "email": "manju.m@acelrtech.com" }
+              "location": {
+                "id": "L1",
+                "descriptor": { "name": "ONDC Test Seller" },
+                "gps": "10.075437,76.438243"
+              },
+              "time": {
+                "range": {
+                  "start": "2025-10-29T06:39:44.000Z",
+                  "end": "2025-10-29T08:39:44.000Z"
+                }
+              },
+              "contact": {
+                "phone": "9605904686",
+                "email": "manju.m@acelrtech.com"
+              }
             },
             {
               "type": "end",
               "location": {
-                "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
+                "address": "Home: Kirti Singhvi, 13th Main,, Apartment Bangalore, Karnataka, 560001, India. Contact Number: 9886450059",
                 "gps": "26.9154576,75.8189817",
                 "area_code": "302001",
                 "state": { "name": "Karnataka" },
-                "city": { "name": "Bengaluru" },
+                "city": { "name": "Bangalore" },
                 "country": { "code": "IND" }
               },
-              "time": { "range": { "start": "2025-10-25T13:44:31.000Z", "end": "2025-10-25T15:44:31.000Z" } },
-              "contact": { "phone": "8892307028" }
+              "time": {
+                "range": {
+                  "start": "2025-10-31T06:39:44.000Z",
+                  "end": "2025-10-31T08:39:44.000Z"
+                }
+              },
+              "contact": { "phone": "9886450059" }
             }
           ],
           "tags": [
             {
               "descriptor": { "code": "DELIVERY_TERMS" },
-              "list": [{ "descriptor": { "code": "INCOTERMS" }, "value": "CIF" }]
+              "list": [
+                {
+                  "descriptor": { "code": "INCOTERMS" },
+                  "value": "CIF"
+                }
+              ]
             }
           ]
         }
@@ -101,16 +123,66 @@
             "@ondc/org/item_quantity": { "count": 1 },
             "item": { "price": { "currency": "INR", "value": 71.43 } }
           },
-          { "title": "Tax", "@ondc/org/item_id": "dairy003", "@ondc/org/title_type": "tax", "price": { "currency": "INR", "value": 3.57 } },
-          { "title": "Tax", "@ondc/org/item_id": "dairy003", "@ondc/org/title_type": "refund", "price": { "currency": "INR", "value": -3.57 } },
-          { "title": "Discount", "@ondc/org/item_id": "dairy003", "@ondc/org/title_type": "discount", "price": { "currency": "INR", "value": 0.0 } },
-          { "title": "Discount", "@ondc/org/item_id": "dairy003", "@ondc/org/title_type": "refund", "price": { "currency": "INR", "value": 0.0 } },
-          { "title": "Delivery Charge", "@ondc/org/item_id": 1, "@ondc/org/title_type": "delivery", "price": { "currency": "INR", "value": 0.0 } },
-          { "title": "Delivery Charge", "@ondc/org/item_id": 1, "@ondc/org/title_type": "refund", "price": { "currency": "INR", "value": 0.0 } },
-          { "title": "Convenience Fee", "@ondc/org/item_id": 1, "@ondc/org/title_type": "misc", "price": { "currency": "INR", "value": 7.5 } },
-          { "title": "Convenience Fee", "@ondc/org/item_id": 1, "@ondc/org/title_type": "refund", "price": { "currency": "INR", "value": -7.5 } },
-          { "title": "Packing", "@ondc/org/item_id": 1, "@ondc/org/title_type": "packing", "price": { "currency": "INR", "value": 0.0 } },
-          { "title": "Packing", "@ondc/org/item_id": 1, "@ondc/org/title_type": "refund", "price": { "currency": "INR", "value": 0.0 } }
+          {
+            "title": "Tax",
+            "@ondc/org/item_id": "dairy003",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": 3.57 }
+          },
+          {
+            "title": "Tax",
+            "@ondc/org/item_id": "dairy003",
+            "@ondc/org/title_type": "refund",
+            "price": { "currency": "INR", "value": -3.57 }
+          },
+          {
+            "title": "Discount",
+            "@ondc/org/item_id": "dairy003",
+            "@ondc/org/title_type": "discount",
+            "price": { "currency": "INR", "value": 0.00 }
+          },
+          {
+            "title": "Discount",
+            "@ondc/org/item_id": "dairy003",
+            "@ondc/org/title_type": "refund",
+            "price": { "currency": "INR", "value": 0.0 }
+          },
+          {
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "delivery",
+            "price": { "currency": "INR", "value": 0.00 }
+          },
+          {
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "refund",
+            "price": { "currency": "INR", "value": 0.0 }
+          },
+          {
+            "title": "Convenience Fee",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "misc",
+            "price": { "currency": "INR", "value": 7.50 }
+          },
+          {
+            "title": "Convenience Fee",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "refund",
+            "price": { "currency": "INR", "value": -7.5 }
+          },
+          {
+            "title": "Packing",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "packing",
+            "price": { "currency": "INR", "value": 0.00 }
+          },
+          {
+            "title": "Packing",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "refund",
+            "price": { "currency": "INR", "value": 0.0 }
+          }
         ],
         "price": { "currency": "INR", "value": 0.0 },
         "ttl": "P2D"
@@ -142,8 +214,8 @@
           "params": { "currency": "INR", "amount": 0.0 }
         }
       ],
-      "created_at": "2025-10-23T13:44:29.991Z",
-      "updated_at": "2025-10-23T13:57:05.927Z",
+      "created_at": "2025-10-29T06:39:44.521Z",
+      "updated_at": "2025-10-29T07:05:59.121Z",
       "tags": [
         {
           "descriptor": { "code": "buyer_id" },
@@ -155,16 +227,18 @@
         {
           "descriptor": { "code": "bpp_terms" },
           "list": [
-            { "descriptor": { "code": "max_liability" }, "value": 2 },
-            { "descriptor": { "code": "max_liability_cap" }, "value": 10000 },
+            { "descriptor": { "code": "max_liability" }, "value": "2" },
+            { "descriptor": { "code": "max_liability_cap" }, "value": "10000" },
             { "descriptor": { "code": "mandatory_arbitration" }, "value": false },
             { "descriptor": { "code": "court_jurisdiction" }, "value": "Bengaluru" },
-            { "descriptor": { "code": "delay_interest" }, "value": 1000 }
+            { "descriptor": { "code": "delay_interest" }, "value": "1000" }
           ]
         },
         {
           "descriptor": { "code": "bap_terms" },
-          "list": [{ "descriptor": { "code": "accept_bpp_terms" }, "value": "Y" }]
+          "list": [
+            { "descriptor": { "code": "accept_bpp_terms" }, "value": "Y" }
+          ]
         }
       ]
     }

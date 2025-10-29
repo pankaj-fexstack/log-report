@@ -7,9 +7,9 @@
     },
     "action": "on_status",
     "version": "2.0.2",
-    "transaction_id": "123d9592-5fa7-4d0d-a856-8902dc0f4efc",
-    "message_id": "e3d21b1f-7e39-49b9-85a2-66387785d030",
-    "timestamp": "2025-10-23T10:54:34.756Z",
+    "transaction_id": "b0cf8a0d-6ea7-4e20-a4e9-15b68a7398e3",
+    "message_id": "0ec3fa6d-c65d-4e8a-873e-4c0559a30992",
+    "timestamp": "2025-10-29T04:38:51.390Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -18,11 +18,13 @@
   },
   "message": {
     "order": {
-      "id": "789025",
+      "id": "167188",
       "state": "Accepted",
       "provider": {
         "id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
-        "locations": [{ "id": "L1" }]
+        "locations": [
+          { "id": "L1" }
+        ]
       },
       "items": [
         {
@@ -43,7 +45,7 @@
       },
       "fulfillments": [
         {
-          "id": "1",
+          "id": 1,
           "type": "Delivery",
           "@ondc/org/provider_name": "Rapidor",
           "tracking": false,
@@ -59,8 +61,8 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-10-23T10:47:03.000Z",
-                  "end": "2025-10-23T12:47:03.000Z"
+                  "start": "2025-10-29T04:29:33.000Z",
+                  "end": "2025-10-29T06:29:33.000Z"
                 }
               },
               "contact": {
@@ -80,8 +82,8 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-10-25T10:47:03.000Z",
-                  "end": "2025-10-25T12:47:03.000Z"
+                  "start": "2025-10-31T04:29:33.000Z",
+                  "end": "2025-10-31T06:29:33.000Z"
                 }
               },
               "contact": { "phone": "8892307028" }
@@ -93,7 +95,7 @@
       "payments": [
         {
           "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "10.0",
+          "@ondc/org/buyer_app_finder_fee_amount": 10.0,
           "@ondc/org/settlement_details": [
             {
               "settlement_counterparty": "buyer-app",
@@ -163,8 +165,8 @@
         "price": { "currency": "INR", "value": 82.5 },
         "ttl": "P2D"
       },
-      "created_at": "2025-10-23T10:47:02.071Z",
-      "updated_at": "2025-10-23T10:47:03.781Z"
+      "created_at": "2025-10-29T04:29:31.946Z",
+      "updated_at": "2025-10-29T04:29:33.113Z"
     }
   }
 }

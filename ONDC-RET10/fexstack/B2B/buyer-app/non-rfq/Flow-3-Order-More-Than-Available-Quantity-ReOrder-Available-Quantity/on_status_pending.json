@@ -2,14 +2,14 @@
   "context": {
     "domain": "ONDC:RET10",
     "location": {
-      "city": {"code": "std:080"},
-      "country": {"code": "IND"}
+      "city": { "code": "std:080" },
+      "country": { "code": "IND" }
     },
     "action": "on_status",
     "version": "2.0.2",
-    "transaction_id": "3f8d0329-d215-4f19-8cfa-ffce93f95f68",
-    "message_id": "a1b21b1f-7e39-49b9-85a2-66387785d999",
-    "timestamp": "2025-10-23T13:05:04.727Z",
+    "transaction_id": "21916866-91e5-46d2-93fb-c7b228b08e92",
+    "message_id": "0ec3fa6d-a34g-4e8a-873e-4c0559a30992",
+    "timestamp": "2025-10-29T05:05:48.111Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -18,28 +18,28 @@
   },
   "message": {
     "order": {
-      "id": "357540",
+      "id": "144532",
       "state": "Accepted",
       "provider": {
         "id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
-        "locations": [{"id": "L1"}]
+        "locations": [{ "id": "L1" }]
       },
       "items": [
         {
           "id": "dairy003",
-          "fulfillment_ids": ["1"],
-          "quantity": {"selected": {"count": 1}},
+          "fulfillment_ids": [1],
+          "quantity": { "selected": { "count": 1 } },
           "location_ids": ["L1"]
         }
       ],
       "billing": {
         "name": "Pankaj Sharma",
-        "address": "PadmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India",
-        "phone": "8892307028",
+        "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
         "email": "pankajsharma@fexstack.com",
+        "phone": "8892307028",
         "tax_id": "29AFJFS4237D1ZU",
-        "city": {"name": "Bengaluru"},
-        "state": {"name": "Karnataka"}
+        "city": { "name": "Bengaluru" },
+        "state": { "name": "Karnataka" }
       },
       "fulfillments": [
         {
@@ -48,13 +48,25 @@
           "@ondc/org/provider_name": "Rapidor",
           "tracking": false,
           "rateable": false,
-          "state": {"descriptor": {"code": "Pending"}},
+          "state": { "descriptor": { "code": "Pending" } },
           "stops": [
             {
               "type": "start",
-              "location": {"id": "L1", "descriptor": {"name": "PlaceOrder"}, "gps": "10.075437,76.438243"},
-              "time": {"range": {"start": "2025-10-23T12:57:38.000Z", "end": "2025-10-23T14:57:38.000Z"}},
-              "contact": {"phone": "9605904686", "email": "care@acelrtech.com"}
+              "location": {
+                "id": "L1",
+                "descriptor": { "name": "PlaceOrder" },
+                "gps": "10.075437,76.438243"
+              },
+              "time": {
+                "range": {
+                  "start": "2025-10-29T05:00:28.000Z",
+                  "end": "2025-10-29T07:00:28.000Z"
+                }
+              },
+              "contact": {
+                "phone": "9605904686",
+                "email": "care@acelrtech.com"
+              }
             },
             {
               "type": "end",
@@ -62,12 +74,17 @@
                 "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Bengaluru, 302001",
                 "gps": "26.915458,75.818982",
                 "area_code": "302001",
-                "state": {"name": "Karnataka"},
-                "city": {"name": "Bengaluru"},
-                "country": {"code": "IND"}
+                "state": { "name": "Karnataka" },
+                "city": { "name": "Bengaluru" },
+                "country": { "code": "IND" }
               },
-              "time": {"range": {"start": "2025-10-25T12:57:38.000Z", "end": "2025-10-25T14:57:38.000Z"}},
-              "contact": {"phone": "8892307028"}
+              "time": {
+                "range": {
+                  "start": "2025-10-31T05:00:28.000Z",
+                  "end": "2025-10-31T07:00:28.000Z"
+                }
+              },
+              "contact": { "phone": "8892307028" }
             }
           ],
           "tags": []
@@ -75,10 +92,8 @@
       ],
       "payments": [
         {
-          "type": "ON-FULFILLMENT",
-          "collected_by": "BPP",
           "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": 10.0,
+          "@ondc/org/buyer_app_finder_fee_amount": "10.0",
           "@ondc/org/settlement_details": [
             {
               "settlement_counterparty": "buyer-app",
@@ -92,25 +107,61 @@
               "branch_name": "xxxx"
             }
           ],
+          "type": "ON-FULFILLMENT",
+          "collected_by": "BPP",
           "@ondc/org/settlement_basis": "delivery",
           "@ondc/org/settlement_window": "P1D",
-          "@ondc/org/withholding_amount": 0,
+          "@ondc/org/withholding_amount": "0",
           "status": "NOT-PAID",
-          "params": {"currency": "INR", "amount": 71.43}
+          "params": { "currency": "INR", "amount": "71.43" }
         }
       ],
       "quote": {
         "breakup": [
-          {"title": "Hide and Seek", "@ondc/org/item_id": "dairy003", "@ondc/org/title_type": "item", "price": {"currency": "INR", "value": 71.43}, "@ondc/org/item_quantity": {"count": 1}},
-          {"title": "Tax", "@ondc/org/item_id": "dairy003", "@ondc/org/title_type": "tax", "price": {"currency": "INR", "value": 3.57}},
-          {"title": "Discount", "@ondc/org/item_id": "dairy003", "@ondc/org/title_type": "discount", "price": {"currency": "INR", "value": 0.0}},
-          {"title": "Delivery Charge", "@ondc/org/item_id": "1", "@ondc/org/title_type": "delivery", "price": {"currency": "INR", "value": 0.0}},
-          {"title": "Convenience Fee", "@ondc/org/item_id": "1", "@ondc/org/title_type": "misc", "price": {"currency": "INR", "value": 7.5}},
-          {"title": "Packing", "@ondc/org/item_id": "1", "@ondc/org/title_type": "packing", "price": {"currency": "INR", "value": 0.0}}
+          {
+            "title": "Hide and Seek",
+            "@ondc/org/item_id": "dairy003",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "71.43" },
+            "@ondc/org/item_quantity": { "count": 1 },
+            "item": { "price": { "currency": "INR", "value": "71.43" } }
+          },
+          {
+            "title": "Tax",
+            "@ondc/org/item_id": "dairy003",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": "3.57" }
+          },
+          {
+            "title": "Discount",
+            "@ondc/org/item_id": "dairy003",
+            "@ondc/org/title_type": "discount",
+            "price": { "currency": "INR", "value": "0.00" }
+          },
+          {
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "delivery",
+            "price": { "currency": "INR", "value": "0.00" }
+          },
+          {
+            "title": "Convenience Fee",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "misc",
+            "price": { "currency": "INR", "value": "7.50" }
+          },
+          {
+            "title": "Packing",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "packing",
+            "price": { "currency": "INR", "value": "0.00" }
+          }
         ],
-        "price": {"currency": "INR", "value": 82.5},
+        "price": { "currency": "INR", "value": "82.50" },
         "ttl": "P2D"
-      }
+      },
+      "created_at": "2025-10-29T05:00:28.487Z",
+      "updated_at": "2025-10-29T05:05:48.111Z"
     }
   }
 }

@@ -7,9 +7,9 @@
     },
     "action": "on_status",
     "version": "2.0.2",
-    "transaction_id": "86312734-688e-49b3-aa76-713d026d67c1",
-    "message_id": "a1b21b1f-6e39-49b9-85a2-66387785d939",
-    "timestamp": "2025-10-23T13:28:29.710Z",
+    "transaction_id": "9449e022-c3b7-4c98-a582-c3a6e5f1c477",
+    "message_id": "0ec3fa6d-a34g-4e8a-873e-4c0559a14992",
+    "timestamp": "2025-10-29T06:24:11.046Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -18,27 +18,31 @@
   },
   "message": {
     "order": {
-      "id": 766028,
+      "id": "291595",
       "state": "Accepted",
       "provider": {
         "id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
-        "locations": [{ "id": "L1" }]
+        "locations": [
+          { "id": "L1" }
+        ]
       },
       "items": [
         {
           "id": "dairy003",
           "fulfillment_ids": ["1"],
-          "quantity": { "selected": { "count": 1 } },
+          "quantity": {
+            "selected": { "count": 1 }
+          },
           "location_ids": ["L1"]
         }
       ],
       "billing": {
         "name": "Pankaj Sharma",
-        "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
+        "address": "Home: Kirti Singhvi, 13th Main,, Apartment Bangalore, Karnataka, 560001, India. Contact Number: 9886450059",
         "email": "pankajsharma@fexstack.com",
-        "phone": "8892307028",
+        "phone": "9886450059",
         "tax_id": "29AFJFS4237D1ZU",
-        "city": { "name": "Bengaluru" },
+        "city": { "name": "Bangalore" },
         "state": { "name": "Karnataka" }
       },
       "fulfillments": [
@@ -48,7 +52,9 @@
           "@ondc/org/provider_name": "Rapidor",
           "tracking": false,
           "rateable": false,
-          "state": { "descriptor": { "code": "Pending" } },
+          "state": {
+            "descriptor": { "code": "Pending" }
+          },
           "stops": [
             {
               "type": "start",
@@ -59,29 +65,32 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-10-23T13:24:47.000Z",
-                  "end": "2025-10-23T15:24:47.000Z"
+                  "start": "2025-10-29T06:18:41.000Z",
+                  "end": "2025-10-29T08:18:41.000Z"
                 }
               },
-              "contact": { "phone": "9605904686", "email": "care@acelrtech.com" }
+              "contact": {
+                "phone": "9605904686",
+                "email": "care@acelrtech.com"
+              }
             },
             {
               "type": "end",
               "location": {
-                "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Bengaluru, 302001",
+                "address": "Home: Kirti Singhvi, 13th Main, Apartment Bangalore, Bangalore, 302001",
                 "gps": "26.915458,75.818982",
                 "area_code": "302001",
                 "state": { "name": "Karnataka" },
-                "city": { "name": "Bengaluru" },
+                "city": { "name": "Bangalore" },
                 "country": { "code": "IND" }
               },
               "time": {
                 "range": {
-                  "start": "2025-10-25T13:24:47.000Z",
-                  "end": "2025-10-25T15:24:47.000Z"
+                  "start": "2025-10-31T06:18:41.000Z",
+                  "end": "2025-10-31T08:18:41.000Z"
                 }
               },
-              "contact": { "phone": "8892307028" }
+              "contact": { "phone": "9886450059" }
             }
           ],
           "tags": []
@@ -90,7 +99,7 @@
       "payments": [
         {
           "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": 10.0,
+          "@ondc/org/buyer_app_finder_fee_amount": "10.0",
           "@ondc/org/settlement_details": [
             {
               "settlement_counterparty": "buyer-app",
@@ -110,7 +119,10 @@
           "@ondc/org/settlement_window": "P1D",
           "@ondc/org/withholding_amount": 0,
           "status": "NOT-PAID",
-          "params": { "currency": "INR", "amount": 71.43 }
+          "params": {
+            "currency": "INR",
+            "amount": "71.43"
+          }
         }
       ],
       "quote": {
@@ -119,46 +131,48 @@
             "title": "Hide and Seek",
             "@ondc/org/item_id": "dairy003",
             "@ondc/org/title_type": "item",
-            "price": { "currency": "INR", "value": 71.43 },
+            "price": { "currency": "INR", "value": "71.43" },
             "@ondc/org/item_quantity": { "count": 1 },
-            "item": { "price": { "currency": "INR", "value": 71.43 } }
+            "item": {
+              "price": { "currency": "INR", "value": "71.43" }
+            }
           },
           {
             "title": "Tax",
             "@ondc/org/item_id": "dairy003",
             "@ondc/org/title_type": "tax",
-            "price": { "currency": "INR", "value": 3.57 }
+            "price": { "currency": "INR", "value": "3.57" }
           },
           {
             "title": "Discount",
             "@ondc/org/item_id": "dairy003",
             "@ondc/org/title_type": "discount",
-            "price": { "currency": "INR", "value": 0.0 }
+            "price": { "currency": "INR", "value": "0.00" }
           },
           {
             "title": "Delivery Charge",
             "@ondc/org/item_id": "1",
             "@ondc/org/title_type": "delivery",
-            "price": { "currency": "INR", "value": 0.0 }
+            "price": { "currency": "INR", "value": "0.00" }
           },
           {
             "title": "Convenience Fee",
             "@ondc/org/item_id": "1",
             "@ondc/org/title_type": "misc",
-            "price": { "currency": "INR", "value": 7.5 }
+            "price": { "currency": "INR", "value": "7.50" }
           },
           {
             "title": "Packing",
             "@ondc/org/item_id": "1",
             "@ondc/org/title_type": "packing",
-            "price": { "currency": "INR", "value": 0.0 }
+            "price": { "currency": "INR", "value": "0.00" }
           }
         ],
-        "price": { "currency": "INR", "value": 82.5 },
+        "price": { "currency": "INR", "value": "82.50" },
         "ttl": "P2D"
       },
-      "created_at": "2025-10-23T13:24:47.631Z",
-      "updated_at": "2025-10-23T13:24:48.009Z"
+      "created_at": "2025-10-29T06:18:41.400Z",
+      "updated_at": "2025-10-29T06:24:11.046Z"
     }
   }
 }

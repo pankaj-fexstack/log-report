@@ -13,9 +13,9 @@
         "version": "2.0.2",
         "bap_id": "preprod.fexstack.com",
         "bap_uri": "https://preprod.fexstack.com/",
-        "transaction_id": "5710e067-9659-4c1d-bf45-859ac1a4902f",
-        "message_id": "0ec3fa6d-c65d-4e8a-873e-4c0559a30648",
-        "timestamp": "2025-10-23T13:38:34.942Z",
+        "transaction_id": "a33afbde-292c-4457-a57f-809b27f2a903",
+        "message_id": "34ec97dd-5278-47a5-98f4-c1c52572d90e",
+        "timestamp": "2025-10-29T06:34:55.452Z",
         "ttl": "PT30S",
         "bpp_id": "ondcpreprodb2b.rapidor.co",
         "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller"
@@ -43,22 +43,21 @@
                         "selected": {
                             "count": 1
                         }
-                    },
-                    "tags": []
+                    }
                 }
             ],
             "billing": {
                 "name": "Pankaj Sharma",
-                "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
+                "address": "Home: Kirti Singhvi, 13th Main,, Apartment Bangalore, Karnataka, 560001, India. Contact Number: 9886450059",
                 "state": {
                     "name": "Karnataka"
                 },
                 "city": {
-                    "name": "Bengaluru"
+                    "name": "Bangalore"
                 },
                 "tax_id": "29AFJFS4237D1ZU",
                 "email": "pankajsharma@fexstack.com",
-                "phone": "8892307028"
+                "phone": "9886450059"
             },
             "fulfillments": [
                 {
@@ -69,10 +68,10 @@
                             "type": "end",
                             "location": {
                                 "gps": "26.9154576,75.8189817",
-                                "address": "Pankaj Sharma, padmaUpadhya Layout, Mutharayana Nagar, Gnana Bharathi Bengaluru, Karnataka, 560053, India. Contact Number: 8892307028",
+                                "address": "Home: Kirti Singhvi, 13th Main,, Apartment Bangalore, Karnataka, 560001, India. Contact Number: 9886450059",
                                 "area_code": "302001",
                                 "city": {
-                                    "name": "Bengaluru"
+                                    "name": "Bangalore"
                                 },
                                 "country": {
                                     "code": "IND"
@@ -82,7 +81,7 @@
                                 }
                             },
                             "contact": {
-                                "phone": "8892307028"
+                                "phone": "9886450059"
                             }
                         }
                     ],

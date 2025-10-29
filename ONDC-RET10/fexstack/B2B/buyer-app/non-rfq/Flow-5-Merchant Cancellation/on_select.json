@@ -7,9 +7,9 @@
     },
     "action": "on_select",
     "version": "2.0.2",
-    "transaction_id": "5710e067-9659-4c1d-bf45-859ac1a4902f",
-    "message_id": "0ec3fa6d-c65d-4e8a-873e-4c0559a30648",
-    "timestamp": "2025-10-23T13:38:32.938Z",
+    "transaction_id": "a33afbde-292c-4457-a57f-809b27f2a903",
+    "message_id": "34ec97dd-5278-47a5-98f4-c1c52572d90e",
+    "timestamp": "2025-10-29T06:34:53.428Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -25,10 +25,9 @@
       "items": [
         {
           "id": "dairy003",
-          "fulfillment_ids": ["1"],
+          "fulfillment_ids": [1],
           "location_ids": ["L1"],
-          "quantity": { "selected": { "count": 1 } },
-          "tags": []
+          "quantity": { "selected": { "count": 1 } }
         }
       ],
       "payments": [
@@ -39,7 +38,7 @@
       ],
       "fulfillments": [
         {
-          "id": "1",
+          "id": 1,
           "@ondc/org/provider_name": "Rapidor",
           "tracking": false,
           "@ondc/org/category": "Standard Delivery",

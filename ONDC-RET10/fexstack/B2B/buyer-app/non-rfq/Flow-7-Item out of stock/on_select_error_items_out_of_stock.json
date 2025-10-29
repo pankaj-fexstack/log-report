@@ -7,9 +7,9 @@
     },
     "action": "on_select",
     "version": "2.0.2",
-    "transaction_id": "f2b6ed6d-2864-4d7f-afc8-52131dca240b",
-    "message_id": "527f7c24-db37-40df-ab22-6d9d47d69f1d",
-    "timestamp": "2025-10-23T14:12:52.929Z",
+    "transaction_id": "1e5e33f4-930f-431b-a312-29da6bd1ad5f",
+    "message_id": "1f04635a-49af-44ad-a814-ac9a9b6eb0c7",
+    "timestamp": "2025-10-29T08:32:35.648Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -20,19 +20,25 @@
     "order": {
       "provider": {
         "id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
-        "locations": [{ "id": "L1" }]
+        "locations": [
+          { "id": "L1" }
+        ]
       },
       "items": [
         {
           "id": "dairy003",
           "fulfillment_ids": [1],
           "location_ids": ["L1"],
-          "quantity": { "selected": { "count": 15 } },
-          "tags": []
+          "quantity": {
+            "selected": { "count": 11 }
+          }
         }
       ],
       "payments": [
-        { "type": "ON-FULFILLMENT", "collected_by": "BPP" }
+        {
+          "type": "ON-FULFILLMENT",
+          "collected_by": "BPP"
+        }
       ],
       "fulfillments": [
         {
@@ -41,7 +47,9 @@
           "tracking": false,
           "@ondc/org/category": "Standard Delivery",
           "@ondc/org/TAT": "P4D",
-          "state": { "descriptor": { "code": "Serviceable" } }
+          "state": {
+            "descriptor": { "code": "Serviceable" }
+          }
         }
       ],
       "quote": {
@@ -68,19 +76,19 @@
           },
           {
             "title": "Delivery Charge",
-            "@ondc/org/item_id": 1,
+            "@ondc/org/item_id": "1",
             "@ondc/org/title_type": "delivery",
             "price": { "currency": "INR", "value": 0.0 }
           },
           {
             "title": "Convenience Fee",
-            "@ondc/org/item_id": 1,
+            "@ondc/org/item_id": "1",
             "@ondc/org/title_type": "misc",
             "price": { "currency": "INR", "value": 75.0 }
           },
           {
             "title": "Packing",
-            "@ondc/org/item_id": 1,
+            "@ondc/org/item_id": "1",
             "@ondc/org/title_type": "packing",
             "price": { "currency": "INR", "value": 0.0 }
           }
@@ -88,11 +96,11 @@
         "price": { "currency": "INR", "value": 825.0 },
         "ttl": "P2D"
       }
-    },
-    "error": {
-      "type": "DOMAIN-ERROR",
-      "code": 40002,
-      "message": "Hide and Seek is not in stock"
     }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002",
+    "message": "Hide and Seek is not in stock"
   }
 }

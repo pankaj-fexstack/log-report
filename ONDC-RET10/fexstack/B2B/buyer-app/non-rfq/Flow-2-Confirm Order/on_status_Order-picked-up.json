@@ -7,9 +7,9 @@
     },
     "action": "on_status",
     "version": "2.0.2",
-    "transaction_id": "123d9592-5fa7-4d0d-a856-8902dc0f4efc",
-    "message_id": "b7904ee3-e24c-48ce-ae86-8728e4e416f1",
-    "timestamp": "2025-10-23T10:58:28.000Z",
+    "transaction_id": "b0cf8a0d-6ea7-4e20-a4e9-15b68a7398e3",
+    "message_id": "fd1a744e-fa49-46d8-a123-f95c5fdc5070",
+    "timestamp": "2025-10-29T04:43:48.000Z",
     "bap_id": "preprod.fexstack.com",
     "bap_uri": "https://preprod.fexstack.com/",
     "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -18,11 +18,13 @@
   },
   "message": {
     "order": {
-      "id": "789025",
+      "id": "167188",
       "state": "In-progress",
       "provider": {
         "id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
-        "locations": [{ "id": "L1" }]
+        "locations": [
+          { "id": "L1" }
+        ]
       },
       "items": [
         {
@@ -43,7 +45,7 @@
       },
       "fulfillments": [
         {
-          "id": "1",
+          "id": 1,
           "type": "Delivery",
           "@ondc/org/provider_name": "Rapidor",
           "tracking": false,
@@ -59,10 +61,10 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-10-23T10:47:03.000Z",
-                  "end": "2025-10-23T12:47:03.000Z"
+                  "start": "2025-10-29T04:29:33.000Z",
+                  "end": "2025-10-29T06:29:33.000Z"
                 },
-                "timestamp": "2025-10-23T10:58:28.000Z"
+                "timestamp": "2025-10-29T04:43:48.000Z"
               },
               "contact": {
                 "phone": "9605904686",
@@ -73,7 +75,7 @@
                 "short_desc": "picked up",
                 "long_desc": "picked up",
                 "images": [
-                  "https://rapidor.s3-us-west-2.amazonaws.com/files/_dqclzCGvoo0kIY1WNsWo_screenshot-2025-10-09-085231-png.png"
+                  "https://rapidor.s3-us-west-2.amazonaws.com/files/E73S2tb1IWczr9LqhWLRe_screenshot-2025-10-09-085231.png"
                 ]
               }
             },
@@ -89,8 +91,8 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-10-25T10:47:03.000Z",
-                  "end": "2025-10-25T12:47:03.000Z"
+                  "start": "2025-10-31T04:29:33.000Z",
+                  "end": "2025-10-31T06:29:33.000Z"
                 }
               },
               "contact": { "phone": "8892307028" }
@@ -102,7 +104,7 @@
       "payments": [
         {
           "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "10.0",
+          "@ondc/org/buyer_app_finder_fee_amount": 10.0,
           "@ondc/org/settlement_details": [
             {
               "settlement_counterparty": "buyer-app",
@@ -174,12 +176,12 @@
       },
       "documents": [
         {
-          "url": "https://ondcpreprodb2b.rapidor.co/static/pdf/789025.pdf?v=1761217109",
+          "url": "https://rapidor.s3-us-west-2.amazonaws.com/invoices/IND/KA/167188-20567c15-13fa-4d98-be49-9e8dfdae039c.pdf",
           "label": "Invoice"
         }
       ],
-      "created_at": "2025-10-23T10:47:02.071Z",
-      "updated_at": "2025-10-23T10:58:28.000Z"
+      "created_at": "2025-10-29T04:29:31.946Z",
+      "updated_at": "2025-10-29T04:43:48.000Z"
     }
   }
 }

@@ -13,9 +13,9 @@
         "version": "2.0.2",
         "bap_id": "preprod.fexstack.com",
         "bap_uri": "https://preprod.fexstack.com/",
-        "transaction_id": "3f8d0329-d215-4f19-8cfa-ffce93f95f68",
-        "message_id": "c5f18a1f-92ea-4c2c-98ef-06cbee83793c",
-        "timestamp": "2025-10-23T12:50:22.947Z",
+        "transaction_id": "21916866-91e5-46d2-93fb-c7b228b08e92",
+        "message_id": "112c2284-d040-46d3-b71d-3e4a61cf21ac",
+        "timestamp": "2025-10-29T04:53:41.734Z",
         "ttl": "PT30S",
         "bpp_id": "ondcpreprodb2b.rapidor.co",
         "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller"
@@ -43,8 +43,7 @@
                         "selected": {
                             "count": 1
                         }
-                    },
-                    "tags": []
+                    }
                 }
             ],
             "billing": {
