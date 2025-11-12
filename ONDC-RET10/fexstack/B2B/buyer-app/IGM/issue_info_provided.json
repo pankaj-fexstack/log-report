@@ -1,0 +1,212 @@
+{
+    "context": {
+        "domain": "ONDC:RET10",
+        "action": "issue",
+        "country": "IND",
+        "city": "std:080,",
+        "core_version": "2.0.0",
+        "bap_id": "preprod.fexstack.com",
+        "bap_uri": "https://preprod.fexstack.com/",
+        "bpp_id": "igm-mock-service.ondc.org/igm-protocol-server-preprod",
+        "bpp_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc",
+        "transaction_id": "c1f0262f-8025-4e1e-a1f8-982f486186e7",
+        "message_id": "d862da15-332a-4aa9-9d24-ad99e9d76210",
+        "timestamp": "2025-11-12T05:12:46.664Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": [
+            {
+                "path": "issue.actions",
+                "action": "APPENDED"
+            }
+        ],
+        "issue": {
+            "id": "ISSUE-1",
+            "status": "PROCESSING",
+            "level": "ISSUE",
+            "created_at": "2025-11-12T05:11:38.664Z",
+            "updated_at": "2025-11-12T05:12:46.664Z",
+            "expected_response_time": {
+                "duration": "PT2H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "refs": [
+                {
+                    "ref_id": "167188",
+                    "ref_type": "ORDER"
+                },
+                {
+                    "ref_id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
+                    "ref_type": "PROVIDER"
+                },
+                {
+                    "ref_id": "1",
+                    "ref_type": "FULFILLMENT"
+                },
+                {
+                    "ref_id": "dairy003",
+                    "ref_type": "ITEM",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "message.order.items"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "quantity.selected.count"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "actors": [
+                {
+                    "id": "CUST1",
+                    "type": "CONSUMER",
+                    "info": {
+                        "org": {
+                            "name": "preprod.fexstack.com::ONDC:RET10"
+                        },
+                        "person": {
+                            "name": "Pankaj Sharma"
+                        },
+                        "contact": {
+                            "phone": "8892307028",
+                            "email": "pankajsharma@fexstack.com"
+                        }
+                    }
+                },
+                {
+                    "id": "NP1",
+                    "type": "INTERFACING_NP",
+                    "info": {
+                        "org": {
+                            "name": "preprod.fexstack.com::ONDC:RET10"
+                        },
+                        "contact": {
+                            "phone": "8892307028",
+                            "email": "info@fexstack.com"
+                        },
+                        "person": {
+                            "name": "Support"
+                        }
+                    }
+                },
+                {
+                    "id": "NP2",
+                    "type": "COUNTERPARTY_NP",
+                    "info": {
+                        "org": {
+                            "name": "sellerapp.com::ONDC:RET10"
+                        },
+                        "contact": {
+                            "phone": "9450394140",
+                            "email": "respondentapp@respond.com"
+                        },
+                        "person": {
+                            "name": "Jane Doe"
+                        }
+                    }
+                }
+            ],
+            "source_id": "CUST1",
+            "complainant_id": "NP1",
+            "respondent_ids": [
+                "NP2"
+            ],
+            "descriptor": {
+                "code": "dairy003",
+                "short_desc": "Issue with product quality",
+                "long_desc": "Product quality is not correct. facing issues while using the product",
+                "additional_desc": {
+                    "url": "https://preprod.fexstack.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": [
+                    {
+                        "url": "https://transitsolutions.in/logos/logo.icon",
+                        "size_type": "xs"
+                    }
+                ],
+                "media": [
+                    {
+                        "url": "https://transitsolutions.in/logos/logo.icon"
+                    }
+                ]
+            },
+            "last_action_id": "A4",
+            "actions": [
+                {
+                    "id": "A1",
+                    "descriptor": {
+                        "code": "OPEN",
+                        "short_desc": "Complaint created"
+                    },
+                    "updated_at": "2025-11-12T05:11:38.664Z",
+                    "action_by": "NP1",
+                    "actor_details": {
+                        "name": "Pankaj Sharma"
+                    }
+                },
+                {
+                    "id": "A2",
+                    "ref_id": "NP2",
+                    "ref_type": "COUNTERPARTY_NP",
+                    "descriptor": {
+                        "code": "PROCESSING",
+                        "short_desc": "Complaint created"
+                    },
+                    "updated_at": "2025-11-12T05:11:59.664Z",
+                    "action_by": "NP2",
+                    "actor_details": {
+                        "name": "Pankaj Sharma"
+                    }
+                },
+                {
+                    "id": "A3",
+                    "ref_id": "NP2",
+                    "ref_type": "COUNTERPARTY_NP",
+                    "descriptor": {
+                        "code": "INFO_REQUESTED",
+                        "short_desc": "Please provide product images"
+                    },
+                    "updated_at": "2025-11-12T05:12:07.664Z",
+                    "action_by": "NP2",
+                    "actor_details": {
+                        "name": "Igm mock server"
+                    }
+                },
+                {
+                    "id": "A4",
+                    "ref_id": "A3",
+                    "descriptor": {
+                        "code": "INFO_PROVIDED",
+                        "short_desc": "Info provided from buyer app",
+                        "images": [
+                            {
+                                "url": "http://preprod.fexstack.com/addtional-details/img1.png",
+                                "size_type": "xs"
+                            },
+                            {
+                                "url": "http://preprod.fexstack.com/addtional-details/img2.png",
+                                "size_type": "xs"
+                            }
+                        ]
+                    },
+                    "updated_at": "2025-11-12T05:12:46.664Z",
+                    "action_by": "NP1",
+                    "actor_details": {
+                        "name": "Pankaj Sharma"
+                    }
+                }
+            ]
+        }
+    }
+}
