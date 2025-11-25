@@ -1,0 +1,382 @@
+{
+  "context": {
+    "bap_id": "preprod.fexstack.com",
+    "bap_uri": "https://preprod.fexstack.com/",
+    "bpp_id": "igm-mock-service.ondc.org/igm-protocol-server-preprod",
+    "bpp_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc",
+    "country": "IND",
+    "city": "std:080",
+    "transaction_id": "6790a77d-a935-44c1-a5ff-b7438b124db1",
+    "message_id": "33ffa3b9-8195-49cb-9baf-94360e55a473",
+    "timestamp": "2025-11-19T06:46:02.535Z",
+    "domain": "ONDC:RET10",
+    "core_version": "2.0.0",
+    "ttl": "PT30S",
+    "action": "on_issue"
+  },
+  "message": {
+    "update_target": [
+      {
+        "path": "issue.actions",
+        "action": "APPENDED"
+      }
+    ],
+    "issue": {
+      "id": "ISSUE-2",
+      "level": "GRIEVANCE",
+      "status": "PROCESSING",
+      "expected_response_time": {
+        "duration": "PT2H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "refs": [
+        {
+          "ref_id": "167188",
+          "ref_type": "ORDER"
+        },
+        {
+          "ref_id": "20567c15-13fa-4d98-be49-9e8dfdae039c",
+          "ref_type": "PROVIDER"
+        },
+        {
+          "ref_id": "1",
+          "ref_type": "FULFILLMENT"
+        },
+        {
+          "ref_id": "dairy003",
+          "ref_type": "ITEM",
+          "tags": [
+            {
+              "descriptor": {
+                "code": "message.order.items"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "quantity.selected.count"
+                  },
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "CUST1",
+          "type": "CONSUMER",
+          "info": {
+            "org": {
+              "name": "preprod.fexstack.com::ONDC:RET10"
+            },
+            "person": {
+              "name": "Pankaj Sharma"
+            },
+            "contact": {
+              "phone": "8892307028",
+              "email": "pankajsharma@fexstack.com"
+            }
+          }
+        },
+        {
+          "id": "NP1",
+          "type": "INTERFACING_NP",
+          "info": {
+            "org": {
+              "name": "preprod.fexstack.com::ONDC:RET10"
+            },
+            "contact": {
+              "phone": "8892307028",
+              "email": "info@fexstack.com"
+            },
+            "person": {
+              "name": "Support"
+            }
+          }
+        },
+        {
+          "id": "NP2",
+          "type": "COUNTERPARTY_NP",
+          "info": {
+            "org": {
+              "name": "sellerapp.com::ONDC:RET10"
+            },
+            "contact": {
+              "phone": "9450394140",
+              "email": "respondentapp@respond.com"
+            },
+            "person": {
+              "name": "Jane Doe"
+            }
+          }
+        },
+        {
+          "id": "NP2-GRO",
+          "type": "COUNTERPARTY_NP_GRO",
+          "info": {
+            "org": {
+              "name": "preprod.fexstack.com::ONDC:RET10"
+            },
+            "contact": {
+              "phone": "7364337212",
+              "email": "fextack@interface.com"
+            },
+            "person": {
+              "name": "Grievance Officer BNP"
+            }
+          }
+        }
+      ],
+      "source_id": "CUST1",
+      "complainant_id": "NP1",
+      "respondent_ids": [
+        "NP2"
+      ],
+      "descriptor": {
+        "code": "dairy003",
+        "short_desc": "Issue with product quality",
+        "long_desc": "Product quality is not correct. facing issues while using the product",
+        "additional_desc": {
+          "url": "https://preprod.fexstack.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": [
+          {
+            "url": "https://transitsolutions.in/logos/logo.icon",
+            "size_type": "xs"
+          }
+        ],
+        "media": [
+          {
+            "url": "https://transitsolutions.in/logos/logo.icon"
+          }
+        ]
+      },
+      "last_action_id": "A13",
+      "actions": [
+        {
+          "id": "A1",
+          "descriptor": {
+            "code": "OPEN",
+            "short_desc": "Raise Complainant"
+          },
+          "updated_at": "2025-11-19T04:57:56.234Z",
+          "action_by": "NP1",
+          "actor_details": {
+            "name": "Pankaj Sharma"
+          }
+        },
+        {
+          "id": "A2",
+          "descriptor": {
+            "code": "PROCESSING",
+            "short_desc": "Complaint created"
+          },
+          "updated_at": "2025-11-19T04:58:49.084Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A3_1",
+          "descriptor": {
+            "code": "INFO_REQUESTED",
+            "short_desc": "Please provide product image",
+            "name": "INFO0001"
+          },
+          "updated_at": "2025-11-19T05:07:35.887Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A3_2",
+          "descriptor": {
+            "code": "INFO_REQUESTED",
+            "short_desc": "Please provide Invoice",
+            "name": "INFO0002"
+          },
+          "updated_at": "2025-11-19T05:12:00.846Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A4",
+          "ref_id": "A3_1",
+          "descriptor": {
+            "code": "INFO_PROVIDED",
+            "short_desc": "Info provided from fexstack",
+            "images": [
+              {
+                "url": "http://preprod.fexstack.com/addtional-details/img1.png",
+                "size_type": "xs"
+              },
+              {
+                "url": "http://preprod.fexstack.com/addtional-details/img2.png",
+                "size_type": "xs"
+              }
+            ]
+          },
+          "updated_at": "2025-11-19T05:14:56.346Z",
+          "action_by": "NP1",
+          "actor_details": {
+            "name": "Pankaj Sharma"
+          }
+        },
+        {
+          "id": "A5",
+          "descriptor": {
+            "code": "PROCESSING",
+            "short_desc": "Seller app processing the info"
+          },
+          "updated_at": "2025-11-19T05:35:42.110Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A6",
+          "ref_id": "A3_2",
+          "descriptor": {
+            "code": "INFO_REQUESTED",
+            "short_desc": "Please provide invoice",
+            "name": "INFO0002"
+          },
+          "updated_at": "2025-11-19T05:43:02.857Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A7",
+          "ref_id": "A6",
+          "descriptor": {
+            "code": "INFO_PROVIDED",
+            "short_desc": "Provided invoice",
+            "media": [
+              {
+                "url": "https://preprod.fexstack.com/invoice.pdf"
+              }
+            ]
+          },
+          "updated_at": "2025-11-19T05:44:11.857Z",
+          "action_by": "NP1",
+          "actor_details": {
+            "name": "Pankaj Sharma"
+          }
+        },
+        {
+          "id": "A8",
+          "descriptor": {
+            "code": "PROCESSING",
+            "short_desc": "Processing the complaint information"
+          },
+          "updated_at": "2025-11-19T05:54:00.593Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A9",
+          "ref_id": "R_PARENT",
+          "ref_type": "RESOLUTIONS",
+          "descriptor": {
+            "code": "RESOLUTION_PROPOSED",
+            "short_desc": "PROVIDING RESOLUTION OPTIONS"
+          },
+          "updated_at": "2025-11-19T05:59:33.472Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A10",
+          "ref_id": "R2",
+          "ref_type": "RESOLUTIONS",
+          "descriptor": {
+            "code": "RESOLUTION_ACCEPTED",
+            "short_desc": "Will go with replacement"
+          },
+          "updated_at": "2025-11-19T06:01:11.472Z",
+          "action_by": "NP1"
+        },
+        {
+          "id": "A11",
+          "ref_id": "R2",
+          "ref_type": "RESOLUTIONS",
+          "descriptor": {
+            "code": "RESOLVED",
+            "short_desc": "Complaint resolved with replacement"
+          },
+          "updated_at": "2025-11-19T06:14:41.965Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        },
+        {
+          "id": "A12",
+          "descriptor": {
+            "code": "ESCALATED",
+            "short_desc": "Replacement is taking very much time so don't want to replacement so can i get refund"
+          },
+          "updated_at": "2025-11-19T06:15:11.966Z",
+          "action_by": "NP1"
+        },
+        {
+          "id": "A13",
+          "descriptor": {
+            "code": "PROCESSING",
+            "short_desc": "Processing complaint after escalation"
+          },
+          "updated_at": "2025-11-19T06:46:02.534Z",
+          "action_by": "NP2",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
+        }
+      ],
+      "resolutions": [
+        {
+          "id": "R2",
+          "ref_id": "R_PARENT",
+          "ref_type": "PARENT",
+          "descriptor": {
+            "code": "REPLACEMENT",
+            "short_desc": "Providing replacement of the item"
+          },
+          "updated_at": "2024-08-14T09:57:58.841Z",
+          "proposed_by": "NP2",
+          "tags": [
+            {
+              "descriptor": {
+                "code": "RESOLUTION_DETAILS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ITEM"
+                  },
+                  "value": "I1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "created_at": "2025-11-19T04:57:56.234Z",
+      "updated_at": "2025-11-19T06:46:02.534Z"
+    }
+  }
+}

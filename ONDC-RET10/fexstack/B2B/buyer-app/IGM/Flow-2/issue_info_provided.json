@@ -6,13 +6,13 @@
         "bpp_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc",
         "country": "IND",
         "city": "std:080",
-        "transaction_id": "c1f0262f-8025-4e1e-a1f8-982f486186e7",
-        "message_id": "28b97f30-0fcb-4059-83b3-1e8496cc6295",
-        "timestamp": "2025-11-12T05:15:59.231Z",
+        "transaction_id": "6790a77d-a935-44c1-a5ff-b7438b124db1",
+        "message_id": "19135bfd-d02d-43da-9cf2-ee224d0c97a2",
+        "timestamp": "2025-11-19T05:34:56.110Z",
         "domain": "ONDC:RET10",
         "core_version": "2.0.0",
         "ttl": "PT30S",
-        "action": "on_issue"
+        "action": "issue"
     },
     "message": {
         "update_target": [
@@ -22,7 +22,7 @@
             }
         ],
         "issue": {
-            "id": "ISSUE-1",
+            "id": "ISSUE-2",
             "level": "ISSUE",
             "status": "PROCESSING",
             "expected_response_time": {
@@ -139,15 +139,15 @@
                     }
                 ]
             },
-            "last_action_id": "A9",
+            "last_action_id": "A4",
             "actions": [
                 {
                     "id": "A1",
                     "descriptor": {
                         "code": "OPEN",
-                        "short_desc": "Complaint created"
+                        "short_desc": "Raise Complainant"
                     },
-                    "updated_at": "2025-11-12T05:11:38.664Z",
+                    "updated_at": "2025-11-19T04:57:56.234Z",
                     "action_by": "NP1",
                     "actor_details": {
                         "name": "Pankaj Sharma"
@@ -155,38 +155,48 @@
                 },
                 {
                     "id": "A2",
-                    "ref_id": "NP2",
-                    "ref_type": "COUNTERPARTY_NP",
                     "descriptor": {
                         "code": "PROCESSING",
                         "short_desc": "Complaint created"
                     },
-                    "updated_at": "2025-11-12T05:11:59.664Z",
+                    "updated_at": "2025-11-19T04:58:49.084Z",
                     "action_by": "NP2",
                     "actor_details": {
-                        "name": "Pankaj Sharma"
+                        "name": "Sam Manuel"
                     }
                 },
                 {
-                    "id": "A3",
-                    "ref_id": "NP2",
-                    "ref_type": "COUNTERPARTY_NP",
+                    "id": "A3_1",
                     "descriptor": {
                         "code": "INFO_REQUESTED",
-                        "short_desc": "Please provide product images"
+                        "short_desc": "Please provide product image",
+                        "name": "INFO0001"
                     },
-                    "updated_at": "2025-11-12T05:12:07.664Z",
+                    "updated_at": "2025-11-19T05:07:35.887Z",
                     "action_by": "NP2",
                     "actor_details": {
-                        "name": "Igm mock server"
+                        "name": "Sam Manuel"
+                    }
+                },
+                {
+                    "id": "A3_2",
+                    "descriptor": {
+                        "code": "INFO_REQUESTED",
+                        "short_desc": "Please provide Invoice",
+                        "name": "INFO0002"
+                    },
+                    "updated_at": "2025-11-19T05:12:00.846Z",
+                    "action_by": "NP2",
+                    "actor_details": {
+                        "name": "Sam Manuel"
                     }
                 },
                 {
                     "id": "A4",
-                    "ref_id": "A3",
+                    "ref_id": "A3_1",
                     "descriptor": {
                         "code": "INFO_PROVIDED",
-                        "short_desc": "Info provided from buyer app",
+                        "short_desc": "Info provided from fexstack",
                         "images": [
                             {
                                 "url": "http://preprod.fexstack.com/addtional-details/img1.png",
@@ -198,89 +208,15 @@
                             }
                         ]
                     },
-                    "updated_at": "2025-11-12T05:12:46.664Z",
+                    "updated_at": "2025-11-19T05:34:56.110Z",
                     "action_by": "NP1",
                     "actor_details": {
                         "name": "Pankaj Sharma"
-                    }
-                },
-                {
-                    "id": "A5",
-                    "ref_id": "NP2",
-                    "ref_type": "COUNTERPARTY_NP",
-                    "descriptor": {
-                        "code": "PROCESSING",
-                        "short_desc": "Seller app processing the info"
-                    },
-                    "updated_at": "2025-11-12T05:13:35.234Z",
-                    "action_by": "NP2",
-                    "actor_details": {
-                        "name": "Igm mock server"
-                    }
-                },
-                {
-                    "id": "A6",
-                    "ref_id": "NP2",
-                    "ref_type": "COUNTERPARTY_NP",
-                    "descriptor": {
-                        "code": "INFO_REQUESTED",
-                        "short_desc": "Please provide invoice"
-                    },
-                    "updated_at": "2025-11-12T05:14:02.334Z",
-                    "action_by": "NP2",
-                    "actor_details": {
-                        "name": "Igm mock server"
-                    }
-                },
-                {
-                    "id": "A7",
-                    "ref_id": "A6",
-                    "descriptor": {
-                        "code": "INFO_PROVIDED",
-                        "short_desc": "Provided invoice",
-                        "media": [
-                            {
-                                "url": "https://preprod.fexstack.com/resources/invoiceord1.pdf"
-                            }
-                        ]
-                    },
-                    "updated_at": "2025-11-12T05:14:46.234Z",
-                    "action_by": "NP1",
-                    "actor_details": {
-                        "name": "Pankaj Sharma"
-                    }
-                },
-                {
-                    "id": "A8",
-                    "ref_id": "NP2",
-                    "ref_type": "COUNTERPARTY_NP",
-                    "descriptor": {
-                        "code": "PROCESSING",
-                        "short_desc": "Processing the complaint information"
-                    },
-                    "updated_at": "2025-11-12T05:15:16.211Z",
-                    "action_by": "NP2",
-                    "actor_details": {
-                        "name": "Igm mock server"
-                    }
-                },
-                {
-                    "id": "A9",
-                    "ref_id": "R_PARENT",
-                    "ref_type": "RESOLUTIONS",
-                    "descriptor": {
-                        "code": "RESOLUTION_PROPOSED",
-                        "short_desc": "Resolution Proposed"
-                    },
-                    "updated_at": "2025-11-12T05:15:59.231Z",
-                    "action_by": "NP2",
-                    "actor_details": {
-                        "name": "Igm mock server"
                     }
                 }
             ],
-            "created_at": "2025-11-12T05:11:38.664Z",
-            "updated_at": "2025-11-12T05:15:59.231Z"
+            "created_at": "2025-11-19T04:57:56.234Z",
+            "updated_at": "2025-11-19T05:34:56.110Z"
         }
     }
 }

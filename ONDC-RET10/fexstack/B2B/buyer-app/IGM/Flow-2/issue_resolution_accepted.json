@@ -6,9 +6,9 @@
 		"bpp_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc",
 		"country": "IND",
 		"city": "std:080",
-		"transaction_id": "c1f0262f-8025-4e1e-a1f8-982f486186e7",
-		"message_id": "90e04f1c-3ec2-4907-b5a3-09054d2911c3",
-		"timestamp": "2025-11-12T05:41:38.664Z",
+		"transaction_id": "6790a77d-a935-44c1-a5ff-b7438b124db1",
+		"message_id": "74ffa3b9-8195-49cb-9baf-94360e55e273",
+		"timestamp": "2025-11-19T06:01:11.472Z",
 		"domain": "ONDC:RET10",
 		"core_version": "2.0.0",
 		"ttl": "PT30S",
@@ -22,9 +22,9 @@
 			}
 		],
 		"issue": {
-			"id": "ISSUE-1",
+			"id": "ISSUE-2",
 			"level": "ISSUE",
-			"status": "CLOSED",
+			"status": "PROCESSING",
 			"expected_response_time": {
 				"duration": "PT2H"
 			},
@@ -88,12 +88,12 @@
 						"org": {
 							"name": "preprod.fexstack.com::ONDC:RET10"
 						},
-						"person": {
-							"name": "Support"
-						},
 						"contact": {
 							"phone": "8892307028",
 							"email": "info@fexstack.com"
+						},
+						"person": {
+							"name": "Support"
 						}
 					}
 				},
@@ -104,12 +104,44 @@
 						"org": {
 							"name": "sellerapp.com::ONDC:RET10"
 						},
+						"contact": {
+							"phone": "9450394140",
+							"email": "respondentapp@respond.com"
+						},
 						"person": {
 							"name": "Jane Doe"
+						}
+					}
+				},
+				{
+					"id": "NP2",
+					"type": "COUNTERPARTY_NP",
+					"info": {
+						"org": {
+							"name": "sellerapp.com::ONDC:RET10"
 						},
 						"contact": {
 							"phone": "9450394140",
 							"email": "respondentapp@respond.com"
+						},
+						"person": {
+							"name": "Jane Doe"
+						}
+					}
+				},
+				{
+					"id": "NP2",
+					"type": "COUNTERPARTY_NP",
+					"info": {
+						"org": {
+							"name": "sellerapp.com::ONDC:RET10"
+						},
+						"contact": {
+							"phone": "9450394140",
+							"email": "respondentapp@respond.com"
+						},
+						"person": {
+							"name": "Jane Doe"
 						}
 					}
 				}
@@ -139,15 +171,15 @@
 					}
 				]
 			},
-			"last_action_id": "A12",
+			"last_action_id": "A10",
 			"actions": [
 				{
 					"id": "A1",
 					"descriptor": {
 						"code": "OPEN",
-						"short_desc": "Complaint created"
+						"short_desc": "Raise Complainant"
 					},
-					"updated_at": "2025-11-12T05:11:38.664Z",
+					"updated_at": "2025-11-19T04:57:56.234Z",
 					"action_by": "NP1",
 					"actor_details": {
 						"name": "Pankaj Sharma"
@@ -155,38 +187,48 @@
 				},
 				{
 					"id": "A2",
-					"ref_id": "NP2",
-					"ref_type": "COUNTERPARTY_NP",
 					"descriptor": {
 						"code": "PROCESSING",
 						"short_desc": "Complaint created"
 					},
-					"updated_at": "2025-11-12T05:11:59.664Z",
+					"updated_at": "2025-11-19T04:58:49.084Z",
 					"action_by": "NP2",
 					"actor_details": {
-						"name": "Pankaj Sharma"
+						"name": "Sam Manuel"
 					}
 				},
 				{
-					"id": "A3",
-					"ref_id": "NP2",
-					"ref_type": "COUNTERPARTY_NP",
+					"id": "A3_1",
 					"descriptor": {
 						"code": "INFO_REQUESTED",
-						"short_desc": "Please provide product images"
+						"short_desc": "Please provide product image",
+						"name": "INFO0001"
 					},
-					"updated_at": "2025-11-12T05:12:07.664Z",
+					"updated_at": "2025-11-19T05:07:35.887Z",
 					"action_by": "NP2",
 					"actor_details": {
-						"name": "Igm mock server"
+						"name": "Sam Manuel"
+					}
+				},
+				{
+					"id": "A3_2",
+					"descriptor": {
+						"code": "INFO_REQUESTED",
+						"short_desc": "Please provide Invoice",
+						"name": "INFO0002"
+					},
+					"updated_at": "2025-11-19T05:12:00.846Z",
+					"action_by": "NP2",
+					"actor_details": {
+						"name": "Sam Manuel"
 					}
 				},
 				{
 					"id": "A4",
-					"ref_id": "A3",
+					"ref_id": "A3_1",
 					"descriptor": {
 						"code": "INFO_PROVIDED",
-						"short_desc": "Info provided from buyer app",
+						"short_desc": "Info provided from fexstack",
 						"images": [
 							{
 								"url": "http://preprod.fexstack.com/addtional-details/img1.png",
@@ -198,7 +240,7 @@
 							}
 						]
 					},
-					"updated_at": "2025-11-12T05:12:46.664Z",
+					"updated_at": "2025-11-19T05:14:56.346Z",
 					"action_by": "NP1",
 					"actor_details": {
 						"name": "Pankaj Sharma"
@@ -206,30 +248,28 @@
 				},
 				{
 					"id": "A5",
-					"ref_id": "NP2",
-					"ref_type": "COUNTERPARTY_NP",
 					"descriptor": {
 						"code": "PROCESSING",
 						"short_desc": "Seller app processing the info"
 					},
-					"updated_at": "2025-11-12T05:13:35.234Z",
+					"updated_at": "2025-11-19T05:35:42.110Z",
 					"action_by": "NP2",
 					"actor_details": {
-						"name": "Igm mock server"
+						"name": "Sam Manuel"
 					}
 				},
 				{
 					"id": "A6",
-					"ref_id": "NP2",
-					"ref_type": "COUNTERPARTY_NP",
+					"ref_id": "A3_2",
 					"descriptor": {
 						"code": "INFO_REQUESTED",
-						"short_desc": "Please provide invoice"
+						"short_desc": "Please provide invoice",
+						"name": "INFO0002"
 					},
-					"updated_at": "2025-11-12T05:14:02.334Z",
+					"updated_at": "2025-11-19T05:43:02.857Z",
 					"action_by": "NP2",
 					"actor_details": {
-						"name": "Igm mock server"
+						"name": "Sam Manuel"
 					}
 				},
 				{
@@ -240,11 +280,11 @@
 						"short_desc": "Provided invoice",
 						"media": [
 							{
-								"url": "https://preprod.fexstack.com/resources/invoiceord1.pdf"
+								"url": "https://preprod.fexstack.com/invoice.pdf"
 							}
 						]
 					},
-					"updated_at": "2025-11-12T05:14:46.234Z",
+					"updated_at": "2025-11-19T05:44:11.857Z",
 					"action_by": "NP1",
 					"actor_details": {
 						"name": "Pankaj Sharma"
@@ -252,16 +292,14 @@
 				},
 				{
 					"id": "A8",
-					"ref_id": "NP2",
-					"ref_type": "COUNTERPARTY_NP",
 					"descriptor": {
 						"code": "PROCESSING",
 						"short_desc": "Processing the complaint information"
 					},
-					"updated_at": "2025-11-12T05:15:16.211Z",
+					"updated_at": "2025-11-19T05:54:00.593Z",
 					"action_by": "NP2",
 					"actor_details": {
-						"name": "Igm mock server"
+						"name": "Sam Manuel"
 					}
 				},
 				{
@@ -270,71 +308,56 @@
 					"ref_type": "RESOLUTIONS",
 					"descriptor": {
 						"code": "RESOLUTION_PROPOSED",
-						"short_desc": "Resolution Proposed"
+						"short_desc": "PROVIDING RESOLUTION OPTIONS"
 					},
-					"updated_at": "2025-11-12T05:15:59.231Z",
+					"updated_at": "2025-11-19T05:59:33.472Z",
 					"action_by": "NP2",
 					"actor_details": {
-						"name": "Igm mock server"
+						"name": "Sam Manuel"
 					}
 				},
 				{
 					"id": "A10",
-					"ref_id": "R1",
+					"ref_id": "R2",
 					"ref_type": "RESOLUTIONS",
 					"descriptor": {
-						"code": "RESOLUTION_ACCEPTED"
+						"code": "RESOLUTION_ACCEPTED",
+						"short_desc": "Will go with replacement"
 					},
-					"updated_at": "2025-11-12T05:16:33.151Z",
-					"action_by": "NP1",
-					"actor_details": {
-						"name": "Pankaj Sharma"
-					}
-				},
+					"updated_at": "2025-11-19T06:01:11.472Z",
+					"action_by": "NP1"
+				}
+			],
+			"resolutions": [
 				{
-					"id": "A11",
-					"ref_id": "NP2",
-					"ref_type": "COUNTERPARTY_NP",
+					"id": "R2",
+					"ref_id": "R_PARENT",
+					"ref_type": "PARENT",
 					"descriptor": {
-						"code": "RESOLVED",
-						"short_desc": "Providing replacement"
+						"code": "REPLACEMENT",
+						"short_desc": "Providing replacement of the item"
 					},
-					"updated_at": "2025-11-12T05:17:47.351Z",
-					"action_by": "NP2",
-					"actor_details": {
-						"name": "Igm mock server"
-					}
-				},
-				{
-					"id": "A12",
-					"descriptor": {
-						"code": "CLOSED",
-						"short_desc": "Closing the complaint"
-					},
-					"updated_at": "2025-11-12T05:18:33.223Z",
-					"action_by": "NP1",
-					"actor_details": {
-						"name": "Pankaj Sharma"
-					},
+					"updated_at": "2025-11-19T05:59:33.472Z",
+					"proposed_by": "NP2",
 					"tags": [
 						{
 							"descriptor": {
-								"code": "CLOSURE_DETAILS"
+								"code": "RESOLUTION_DETAILS"
 							},
 							"list": [
 								{
 									"descriptor": {
-										"code": "RATING"
+										"code": "ITEM"
 									},
-									"value": "THUMBS_UP"
+									"value": "I1"
 								}
 							]
 						}
 					]
 				}
 			],
-			"created_at": "2025-11-12T05:11:38.664Z",
-			"updated_at": "2025-11-12T05:18:33.223Z"
+			"created_at": "2025-11-19T04:57:56.234Z",
+			"updated_at": "2025-11-19T06:01:11.472Z"
 		}
 	}
 }

@@ -1,0 +1,20 @@
+{
+  "context": {
+   "bap_id": "preprod.fexstack.com",
+    "bap_uri": "https://preprod.fexstack.com/",
+    "bpp_id": "igm-mock-service.ondc.org/igm-protocol-server-preprod",
+    "bpp_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc",
+    "country": "IND",
+    "city": "std:080",
+    "transaction_id": "6790a77d-a935-44c1-a5ff-b7438b124db1",
+    "message_id": "c6b532e5-1280-478f-a7be-cd8ae6e25972",
+    "timestamp": "2025-11-19T05:13:10.226Z",
+    "domain": "ONDC:RET10",
+    "core_version": "2.0.0",
+    "ttl": "PT30S",
+    "action": "issue_status"
+  },
+  "message": {
+    "issue_id": "ISSUE-2"
+  }
+}
